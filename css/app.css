@@ -26,7 +26,10 @@ img{
     grid-template-columns: repeat(4,1fr);
     gap: 3rem;
 }
-.box_section{}
+.box_section{
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
 /*.link_box{
     width: 300px;
     display: inline-block;
@@ -67,7 +70,7 @@ img{
     height: 9%;
     box-shadow: 0 123px 31px rgba(0, 0, 0, 0.6), 0 123px 31px rgba(0, 0, 0, 0.3);
     border-radius: 100%;
-    bottom: 112px;
+    bottom: 123px;
     left: 30%;    
 }
 .img__box{}
