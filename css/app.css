@@ -16,15 +16,21 @@ body{
 a{
     text-decoration: none;
 }
+img{
+    width: 100%;
+}
 .container{
     max-width: 1300px;
     margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
 }
 .box_section{}
-.link_box{
+/*.link_box{
     width: 300px;
     display: inline-block;
-}
+}*/
 .box{
     border-radius: 20px;
     padding: 12px 27px;
@@ -40,6 +46,7 @@ a{
 .box:hover .btn{
     background-color: #feac00;
     color: #fff;
+    transition: all 0.3 ease;
 }
 .box:hover .image_box{
     top: -40px;
@@ -50,6 +57,7 @@ a{
     position: relative;
     top: 0;
     transition: all 0.3s ease;
+    transform: scale(1.2);
 }
 .image_box::after{
     content: '';
@@ -62,10 +70,7 @@ a{
     bottom: 112px;
     left: 30%;    
 }
-.img__box{
-    width: 150px;
-    height: 150px;
-}
+.img__box{}
 .content_box{
     text-align: center;
     color: #000;
@@ -73,6 +78,7 @@ a{
 }
 .title_content{
     font-size: 1.3rem;
+    font-weight: 900;
 }
 .text_content{
     margin: 1rem 0;
@@ -90,5 +96,6 @@ a{
     background-color: transparent;
     border: 2px solid #feac00;
     padding: 12px;
-    border-radius: 12px;    
+    border-radius: 12px;   
+    font-family: "tanha"; 
 }
